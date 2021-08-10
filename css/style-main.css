@@ -8,7 +8,11 @@ header{min-height: 750px;}
   padding-top: 200px;
   margin-bottom: 50%;
 }
-.buttom-main {font-size: 15px;}
+.buttom-main {
+  font-size: 25px!important;
+  padding: 5px;
+  margin: 5px;
+}
 .buttom-not {
   font-size: 8px!important;
   margin-left: 15px;
@@ -21,6 +25,11 @@ header{min-height: 750px;}
 .bg-vasti img {
   opacity: 0.2;
   filter: blur(8px);
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #fff;
 }
 
 #heart {
