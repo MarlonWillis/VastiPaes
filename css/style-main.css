@@ -10,7 +10,7 @@ header{min-height: 750px;}
   position: fixed;
   top: 10px;
   right: 10px;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -26,7 +26,7 @@ header{min-height: 750px;}
   border-radius: 50%;
   top: 10px;
   right: 10px;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
   display: none;
 }
@@ -48,7 +48,7 @@ header{min-height: 750px;}
   background-color: #A759F0;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   margin-right: -50%;
   transition: 1s;
 
@@ -118,20 +118,40 @@ header{min-height: 750px;}
   filter: blur(8px);
 }
 
+.r-love1 {
+  transform: rotate(-45deg);
+}
+.r-love2 {
+  transform: rotate(20deg);
+}
+
+.r-love3 {
+  transform: rotate(-10deg);
+}
+
+.r-love4 {
+  transform: rotate(50deg);
+}
+
+.r-love5 {
+  transform: rotate(-30deg);
+}
+
+
 /* Solid border */
 hr.solid {
   border-top: 3px solid #fff;
 }
 
-#heart {
+#heart1 {
     position: relative;
     width: 100px;
     height: 90px;
     animation: heartbeat 1s infinite;
     margin:0 auto
 }
-#heart:before,
-#heart:after {
+#heart1:before,
+#heart1:after {
     position: absolute;
     content: "";
     left: 50px;
@@ -152,7 +172,7 @@ hr.solid {
          -o-transform-origin: 0 100%;
             transform-origin: 0 100%;
 }
-#heart:after {
+#heart1:after {
     left: 0;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
@@ -262,4 +282,8 @@ html,body{
 }
 @keyframes love {
   0%{top:110%}
+}
+
+.padding-text-love {
+  padding-top: 20px;
 }
