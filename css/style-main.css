@@ -2,6 +2,10 @@ header{min-height: 750px;}
 
 .bg-red {background-color:#dc3545!important;}
 
+.h2, h2 {
+  font-size: 23px!important;
+}
+
 .menu {
   width: 75px;
   height: 75px;
@@ -185,6 +189,50 @@ hr.solid {
             transform-origin: 0 100%;
 }
 #heart1:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+}
+#heart2 {
+    position: relative;
+    width: 20px;
+    height: 50px;
+    animation: heartbeat 1s infinite;
+    margin:0 auto;
+    right: 15px;
+}
+
+#heart2:before,
+#heart2:after {
+    position: absolute;
+    content: "";
+    left: 30px;
+    top: 0;
+    width: 30px;
+    height: 50px;
+    background: #fff;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart2:after {
     left: 0;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
