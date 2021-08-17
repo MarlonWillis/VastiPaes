@@ -31,8 +31,11 @@
           font-size: 3.5rem;
         }
       }
+      .stop-scrolling {
+           height: 100%;
+           overflow: hidden;
+       }
     </style>
-
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
@@ -49,9 +52,18 @@
 <!-- slide in essay -->
 <div class="essay">
   <div class="divaudio">
-  <audio id="audio" controls autoplay="true" height="20%" width="20%">
-  <source src="assets/mp3/Tiago_Iorc-Coisa_Linda.mp3" type="Audio/mp3">
+  <audio id="audio" controls autoplay="true" height="0" width="0">
+    <source src="assets/mp3/Tiago_Iorc-Dia_Especial.mp3" type="Audio/mp3">
   </audio>
+  <audio id="audio" controls autoplay="true" height="0" width="0">
+    <source src="assets/mp3/Tiago_Iorc-Coisa_Linda.mp3" type="Audio/mp3">
+  </audio>
+        <br>
+        <br>
+          <button class="btn btn-lg buttom-scrolling btn-secondary fw-bold border-white bg-white" onclick="disableScroll()">Disable Scrolling</button>
+        <br>
+        <br>
+            <button class="btn btn-lg buttom-scrolling btn-secondary fw-bold border-white bg-white" onclick="enableScroll()">Enable Scrolling</button>
 </div>
 </div>
 <!-- slide in essay -->
@@ -83,13 +95,14 @@
   </br>
 
   <div class="aceitar" id="aceitar">
-  <h2>Não tenho palavras para descrever o'que sinto por você, desda primeira fez que a vi é segurei sua mão, foi áli que senti algo que nunca tinha sentido antes, me apaixonei por uma mulher maravilhosa. Quero um dia poder dormir é acordar ao seu lado. Você é Meu Sol, Meu Céu... Meu tudo.
+  <h2>Não tenho palavras para descrever o'que sinto por você, desda primeira fez que a vi é segurei sua mão, foi áli que senti algo que nunca tinha sentido antes,
+     me apaixonei por uma mulher maravilhosa. Quero um dia poder dormir é acordar ao seu lado. Você é Meu Sol, Meu Céu... Meu tudo.
 </div>
 </br>
 <div class="row heart-bottom-side-1">
-  <div id="heart1"></div>
-    <div id="heart1"></div>
-      <div id="heart1"></div>
+  <div id="heart1" style="width: 80px;"></div>
+    <div id="heart1" style="width: 80px;"></div>
+      <div id="heart1" style="width: 80px;"></div>
         <div id="heart1"></div>
       </div>
 
@@ -117,12 +130,19 @@
 
 </footer>
   <script type="text/javascript" src="assets/dist/js/java-main.js"></script>
-
   <script>
   function setHalfVolume() {
       var myAudio = document.getElementById("audio");
       myAudio.volume = 0.2;
   }
+
+  function disableScroll() {
+         document.body.classList.add("stop-scrolling");
+     }
+
+     function enableScroll() {
+         document.body.classList.remove("stop-scrolling");
+     }
    </script>
 
 </html>

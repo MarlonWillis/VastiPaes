@@ -113,6 +113,10 @@ header{min-height: 750px;}
   font-size: 8px!important;
   margin-left: 15px;
 }
+.buttom-scrolling {
+  font-size: 15px!important;
+  padding: 10px!important;
+}
 .bg-vasti {
   background-image: url("img/vasti.jpg");
   background-repeat: no-repeat;
