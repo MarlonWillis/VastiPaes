@@ -372,7 +372,7 @@ html,body{
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 700;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 @keyframes pulse {
